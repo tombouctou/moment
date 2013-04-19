@@ -31,6 +31,9 @@ function relativeTimeWithPlural(number, withoutSuffix, key) {
         'yy': 'год_года_лет_года'
     };
     if (key === 'm') {
+		if (number % 10 === 1) {
+			withoutSuffix = false;
+		}
         return withoutSuffix ? 'минута' : 'минуту';
     }
     else {

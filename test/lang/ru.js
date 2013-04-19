@@ -154,8 +154,8 @@ exports["lang:ru"] = {
         test.expect(32);
         var start = moment([2007, 1, 28]);
         test.equal(start.from(moment([2007, 1, 28]).add({s:44}), true),  "несколько секунд",    "44 seconds = seconds");
-        test.equal(start.from(moment([2007, 1, 28]).add({s:45}), true),  "минута",   "45 seconds = a minute");
-        test.equal(start.from(moment([2007, 1, 28]).add({s:89}), true),  "минута",   "89 seconds = a minute");
+        test.equal(start.from(moment([2007, 1, 28]).add({s:45}), true),  "минуту",   "45 seconds = a minute");
+        test.equal(start.from(moment([2007, 1, 28]).add({s:89}), true),  "минуту",   "89 seconds = a minute");
         test.equal(start.from(moment([2007, 1, 28]).add({s:90}), true),  "2 минуты",  "90 seconds = 2 minutes");
         test.equal(start.from(moment([2007, 1, 28]).add({m:44}), true),  "44 минуты", "44 minutes = 44 minutes");
         test.equal(start.from(moment([2007, 1, 28]).add({m:45}), true),  "час",    "45 minutes = an hour");
